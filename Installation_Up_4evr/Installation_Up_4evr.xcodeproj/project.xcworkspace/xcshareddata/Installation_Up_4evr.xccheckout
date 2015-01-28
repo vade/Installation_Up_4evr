@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>91DD22C0-BF78-4E43-B36E-EAC476CDD7DF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Installation_Up_4evr</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D016C629D60504D39ECBA9E019F9D95DFF06F7E6</key>
+		<string>https://github.com/vade/Installation_Up_4evr.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Installation_Up_4evr/Installation_Up_4evr.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D016C629D60504D39ECBA9E019F9D95DFF06F7E6</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/vade/Installation_Up_4evr.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D016C629D60504D39ECBA9E019F9D95DFF06F7E6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D016C629D60504D39ECBA9E019F9D95DFF06F7E6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Installation_Up_4evr</string>
+		</dict>
+	</array>
+</dict>
+</plist>
