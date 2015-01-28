@@ -38,18 +38,19 @@
     // Global
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     
-    // grab a copy of a particular
+    // grab a copy of a particular domain - dictionary for example because thats the last example I saw
     NSMutableDictionary *dictionaryPreferences = [[userDefaults persistentDomainForName:@"com.apple.DictionaryServices"] mutableCopy];
   
-    NSArray *activeDictionaries = [dictionaryPreferences objectForKey:@"DCSActiveDictionaries"];
+    // read a value from the prefs
+    NSArray *cachedPrefsValue = [dictionaryPreferences objectForKey:@"DCSActiveDictionaries"];
+    
+    // force a new value
     dictionaryPreferences[@"DCSActiveDictionaries"] = @[@"/Library/Dictionaries/Oxford American Writer's Thesaurus.dictionary"];
     [userDefaults setPersistentDomain:dictionaryPreferences forName:@"com.apple.DictionaryServices"];
-    {
-        NSString *word = @"apple";
-        NSString *definition = (__bridge_transfer NSString *)DCSCopyTextDefinition(NULL, (__bridge CFStringRef)word, CFRangeMake(0, [word length]));
-        NSLog(@"%@", definition);
-    }
-    dictionaryPreferences[@"DCSActiveDictionaries"] = activeDictionaries;
+
+    
+    // reset the old value
+    dictionaryPreferences[@"DCSActiveDictionaries"] = cachedPrefsValue;
     [userDefaults setPersistentDomain:dictionaryPreferences forName:@"com.apple.DictionaryServices"];
 }
 
